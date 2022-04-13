@@ -17,7 +17,8 @@ import Post from'./Post/Post'
 
 function MyPosts(props) {
 
-    let NewMessages = props.messages.map(message => <Post message={message.message} likesCount ={message.id}/>)
+
+    let NewMessages = props.posts.map(message => <Post message={message.message} likesCount ={message.id}/>)
     
     
     return (

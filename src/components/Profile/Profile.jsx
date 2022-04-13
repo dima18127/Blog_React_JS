@@ -11,10 +11,11 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
 function Profile(props) {
+
 return (
 <div>
         <ProfileInfo/>
-        <MyPosts PostName="Баста" messages={props.messages} />
+        <MyPosts PostName="Баста" posts={props.posts} />
         
         {/* <MyPosts PostName="Ногано"/>
         <MyPosts PostName="Морген"/> */}

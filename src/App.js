@@ -30,14 +30,15 @@ import { Route, Routes } from 'react-router-dom';
 
 function App(props) {
 
+
   return (
     <div className="wrapper">
       <Header />
       <NavBar/>
       <div className="wrapper-content" >
         <Routes>
-        <Route path = '/*'  element = {<Profile messages={props.messages}/>}  />;
-        <Route path = 'dialogs*' element = {<Dialogs/>} />;
+        <Route path = '/*'  element = {<Profile posts={props.posts}/>}  />;
+        <Route path = 'dialogs*' element = {<Dialogs dialogs={props.dialogs} Messages={props.Messages}/>} />;
         {/* <Route path = '/1' element = {<Dialogs/>} />; */}
         </Routes>
 
