@@ -1,0 +1,22 @@
+.nav{
+    padding: 20px;
+    font-size: 25px;
+    grid-area: n;
+    background-color: rgba(209, 18, 216, 0.445);
+    border-radius: 10px 0px 0px 10px;
+}
+.nav ul {
+    padding: 0;
+    text-align: center;
+}
+.item {
+    margin-top: 10px;
+color: aliceblue;
+text-decoration: none;
+}
+.active {
+    color: rgb(178, 252, 5);
+    font-size: 30px;
+    text-decoration: none;
+}
+/* export as default classes */

@@ -1,8 +1,11 @@
+
+
 body {
     padding: 70px;
     background-color: rgb(192, 191, 191);
 }
 .wrapper {
+    width: 1800px;
     font-size: 25px;
     display: grid;
     grid-template-areas: 
@@ -13,37 +16,11 @@ body {
     grid-gap: 10px;
 
 }
-.header {
-    font-size: 40px;
-    padding: 20px;
-    display: block;
-    text-align: center;
-    align-items: center;
-    grid-area: h;
-    grid-gap: 10px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(236, 236, 236);
-    border-radius: 10px;
-}
-.nav{
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-    grid-area: n;
-    background-color: rgba(209, 18, 216, 0.445);
-    border-radius: 10px 0px 0px 10px;
-}
-
-.profile {
+.wrapper-content {
     display: block;
     padding: 20px;
     grid-area: c;
     background-color: rgb(233, 177, 224);
     border-radius: 0px 10px 10px 0px;
 }
-.profile img:first-child {
-    display: block;
-    margin: 0 auto;
-    height: 720px;
-    width: 1360px;
-}
+

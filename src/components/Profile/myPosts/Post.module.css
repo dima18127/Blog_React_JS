@@ -1,0 +1,13 @@
+.item {
+    color: aquamarine;
+    
+}
+.text {
+    display: inline;
+}
+.item img {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}

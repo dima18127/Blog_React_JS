@@ -1,0 +1,10 @@
+.post {
+    margin-top: 5px;
+    font-size: 30px;
+    color: black;
+}
+.likes {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(5, 165, 0);
+}

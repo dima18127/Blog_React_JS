@@ -1,0 +1,28 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 8fr ;
+}
+
+ul {
+    padding-left: 0; 
+}
+.dialogs a { 
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.names {
+    padding-left: 30px;
+    list-style-type: none;
+}
+.messages{
+    padding-left: 100px;
+    list-style: none;
+    border-left: 2px solid black;
+}
+.active {
+    color: aliceblue;
+}
