@@ -10,16 +10,18 @@ function MyPosts(props) {
 
     let NewMessages = props.posts.map(message => <Post message={message.message} likesCount ={message.likesCount}/>)
 
-let onPostChange = () => {
-    let text =  NewPostElement.current.value;
-    props.NewPostChange(text);
-}
+
 
     let addPost1 = () => {   
-        let text =  NewPostElement.current.value;   
-        props.addPost(text);
-        NewPostElement.current.value = "nix sebe" ;
+        props.addPost();
+        // props.NewPostChange('');
+        
     };
+
+    let onPostChange = () => {
+        let text =  NewPostElement.current.value;
+        props.NewPostChange(text);
+    }
     
     return (
         <div className={`${m.item} ${m.img}`} >
