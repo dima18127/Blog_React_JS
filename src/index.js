@@ -1,26 +1,26 @@
-import state, { subscribe } from './state'
+import store from './state'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom'
-import {addPost, NewPostChange} from './state'
+// import {addPost, NewPostChange} from './state'
 
 
 let rerenderEntireTree = (state) => {
     ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <App NewPostChange={NewPostChange} addPost={addPost} state={state}/>
+            <App NewPostChange={store.dispatch.bind(store)} dispatch={store.dispatch.bind(store)} state={store.getState()}/>
         </BrowserRouter>
     </React.StrictMode>, 
     document.getElementById('root'));
     }; 
-    rerenderEntireTree(state);
+    rerenderEntireTree(store.getState());
 
 
 
-subscribe(rerenderEntireTree);
+store.subscribe(rerenderEntireTree);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

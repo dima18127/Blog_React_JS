@@ -15,7 +15,7 @@ function Profile(props) {
 return (
 <div>
         <ProfileInfo/>
-        <MyPosts PostName="Баста" posts={props.profilePage.posts} newPostText={props.profilePage.newPostText}  addPost={props.addPost}  NewPostChange={props.NewPostChange}/>
+        <MyPosts PostName="Баста" posts={props.profilePage.posts} newPostText={props.profilePage.newPostText}  dispatch={props.dispatch} />
         
         {/* <MyPosts PostName="Ногано"/>
         <MyPosts PostName="Морген"/> */}

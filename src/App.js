@@ -37,7 +37,7 @@ function App(props) {
       <NavBar/>
       <div className="wrapper-content" >
         <Routes>
-        <Route path = '/*'  element = {<Profile profilePage={props.state.profilePage} addPost={props.addPost} NewPostChange={props.NewPostChange} />}  />;
+        <Route path = '/*'  element = {<Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />}  />;
         <Route path = 'dialogs*' element = {<Dialogs state={props.state.dialogsPage}  />} />;
         {/* <Route path = '/1' element = {<Dialogs/>} />; */}
         </Routes>

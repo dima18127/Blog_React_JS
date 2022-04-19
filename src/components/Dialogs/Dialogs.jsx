@@ -24,7 +24,14 @@ let MessageElements = props.state.Messages.map (Message => <MessageItem text={Me
                 {MessageElements}
                 </ul>
             </div>
+            <div>
+            <textarea ></textarea>
+            </div>
+            <div>
+            <button  >Add post</button>
+            </div>
         </div>
+        
     )
 };
 
